@@ -3,18 +3,18 @@
   $(document).ready(init);
 
   function init(){
-    $(window).scroll(checkViewPortPosition);
+    $(window).scroll(toggleSideNavSearch);
   }
 
-  function checkViewPortPosition(){
+  function toggleSideNavSearch(){
     var position = $('body').scrollTop();
-    // var marker = $('.team-container').offset().top;
+
     if (position > 530) {
-      $('.subscription-container').hide();
-      $('.side-nav-search').show();
+      $('.js-subscription-container').hide();
+      $('.js-side-nav-search').show();
     } else {
-      $('.side-nav-search').hide();
-      $('.subscription-container').show();
+      $('.js-side-nav-search').hide();
+      $('.js-subscription-container').show();
     }
   }
 })();
