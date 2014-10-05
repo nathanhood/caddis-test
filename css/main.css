@@ -5,21 +5,25 @@
 input::-webkit-input-placeholder {
   color: #7f746e;
   font-family: 'Kreon', 'Times New Roman', serif;
+  font-size: .9em;
   font-weight: 300;
 }
 input::-moz-placeholder {
   color: #7f746e;
   font-family: 'Kreon', 'Times New Roman', serif;
+  font-size: .9em;
   font-weight: 300;
 }
 input:-moz-placeholder {   /* Older versions of Firefox */
   color: #7f746e;
   font-family: 'Kreon', 'Times New Roman', serif;
+  font-size: .9em;
   font-weight: 300;
 }
 input:-ms-input-placeholder {
   color: #7f746e;
   font-family: 'Kreon', 'Times New Roman', serif;
+  font-size: .9em;
   font-weight: 300;
 }
 
@@ -56,7 +60,12 @@ a {
 .split {
   display: inline;
   color: #6d645e;
-  margin: 0 8px;
+  margin: 0 6px;
+  font-size: .9em;
+}
+
+.home-link, .contact-link {
+  font-size: .9em;
 }
 
 .cart-link {
@@ -80,6 +89,7 @@ a {
   display: inline-block;
   padding-right: 50px;
   vertical-align: middle;
+  font-size: .9em;
 }
 
 .search-container {
@@ -186,6 +196,10 @@ a {
   line-height: 30px;
 }
 
+.side-nav-link:hover {
+  background-color: rgba(71, 66, 61, .8);
+}
+
 .menu-arrow {
   display: inline-block;
   vertical-align: middle;
@@ -217,18 +231,44 @@ a {
   color: #6d645e;
 }
 
+.side-nav-search {
+  margin-top: 14px;
+  display: none;
+}
+
+.side-nav-search .search-container {
+  width: 190px;
+}
+
+.side-nav-search .search-container .search {
+  width: 190px;
+}
+
+.side-nav-search .login-link {
+  background-image: url('../img/login-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 60px;
+}
 
 /* --------------------- CONTENT -------------------- */
 
 .content-container {
   width: 100%;
-  height: 590px;
-  padding: 70px 40px 0 285px;
+  min-height: 590px;
+  padding: 70px 40px 74px 285px;
   color: #6d645e;
+  overflow: auto;
 }
 
 .inner-content-container {
   max-width: 607px;
+  width: 55%;
   display: inline-block;
   margin-right: 45px;
 }
@@ -263,6 +303,158 @@ a {
   font-weight: 300;
   width: 90%;
   margin: 17.6px auto;
+}
+
+/* ---------------------- MEET THE TEAM --------------------- */
+
+.team-container {
+  width: 100%;
+  min-height: 724px;
+  overflow: auto;
+  background-color: #eaebe8;
+  padding: 71px 0 71px 204px;
+  text-align: center;
+}
+
+.inner-team-container {
+  padding: 0 16px;
+}
+
+.team-title {
+  width: 324px;
+  border-bottom: 1px solid #6d645e;
+  color: #6d645e;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.team-member-container {
+  width: 173px;
+  height: 240px;
+  margin: 25px 15px;
+  display: inline-block;
+  position: relative;
+}
+
+.team-member-photo {
+  width: 173px;
+  height: auto;
+  position: absolute:
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+
+.team-member-name {
+  font-size: 1.4em;
+  margin: 18px 0 0 0;
+  text-transform: uppercase;
+  color: #74b358;
+}
+
+.team-member-role {
+  margin: 0;
+  font-family: 'Kreon', 'Times New Roman', serif;
+  font-weight: 300;
+  color: #6d645e;
+}
+
+.team-member-container:hover .team-member-name {
+  color: #608c48;
+}
+
+.team-member-container:hover .image-hover {
+  visibility: visible;
+}
+
+.image-hover {
+  visibility: hidden;
+  width: 173px;
+  height: 173px;
+  border-radius: 50%;
+  background-color: rgba(102, 88, 79, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  z-index: 10;
+}
+
+.image-hover-spy-glass {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 40% auto 0 auto;
+}
+
+/* ---------------------- FOOTER ------------------------ */
+
+footer {
+  width: 100%;
+  height: 269px;
+  background-image: url('../img/footer-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0 0 0;
+}
+
+.footer-nav-container {
+  width: 535px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: inline-block;
+}
+
+.footer-nav a {
+  color: #d6d6cf;
+  padding: 0 10px;
+  border-right: 1px solid #eaebe8;
+}
+
+.footer-nav a:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.footer-logo {
+  width: 187px;
+  height: auto;
+  margin-right: 50px;
+}
+
+.social-icons {
+  width: 143px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.copyright-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.copyright, .caddis-symbol {
+  color: #d6d6cf;
+  font-family: 'Kreon', 'Times New Roman', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: .85em;
+  display: inline-block;
+}
+
+.copyright {
+  margin-right: 25px;
+}
+
+.caddis-symbol img {
+  width: 28px;
+  height: auto;
+  margin-left: 6px;
 }
 
 /*
